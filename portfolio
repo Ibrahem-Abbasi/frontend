@@ -91,7 +91,7 @@
 
         <div>
             <label for="phone">Phone: </label>
-            <input type="tel" id="phone" name="phone" placeholder="+972 056 1234567" required>
+            <input type="tel" id="phone" name="phone" placeholder="+972 057 1234567" required>
         </div>
 
         <div>
@@ -101,8 +101,8 @@
         </div>
 
         <div>
-            <label for="reason_select">Reason for contacting : </label>
-            <select id="reason_select" name="reason_select" required>
+            <label for="reason">Reason for contacting : </label>
+            <select id="reason" name="reason" required>
                 <option value="job offer">Job Offer</option>
                 <option value="internship">Internship</option>
                 <option value="question">Question</option>
