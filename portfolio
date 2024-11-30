@@ -5,13 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ibrahem Abbasi's Portfolio</title>
-    <style>
-        .section {
-            color: blue;
-            font-weight: bold;
-            font-style: italic;
-        }
-    </style>
 </head>
 
 <body>
@@ -25,7 +18,7 @@
 
 <!-- Education Section -->
 <div>
-    <h3><span class="section">Education</span></h3>
+    <h3><span style="color: blue; font-style: italic">Education</span></h3>
     <ul>
         <li> 2021-2022: <b>Preparation School</b>, Hebrew University.</li>
         <li> 2022-Present: <b>B.Sc. Computer Science</b>, Hebrew University (Third Year)</li>
@@ -34,7 +27,7 @@
 
 <!-- Skills Section -->
 <div>
-    <h3><span class="section">Skills</span></h3>
+    <h3><span style="color: blue; font-style: italic">Skills</span></h3>
     <ul>
         <li><b>Programming Languages</b>:
             <ol>
@@ -63,14 +56,14 @@
 
 <!-- Projects Section -->
 <div>
-    <h3><span class="section">Projects</span></h3>
+    <h3><span style="color: blue; font-style: italic">Projects</span></h3>
     <p>6 Video games developed in Unity.</p>
     <a href="https://ibrahem-abassi.itch.io/" target="_blank">Visit my projects page!</a>
 </div>
 
 <!-- Languages Section -->
 <div>
-    <h3><span class="section">Languages</span></h3>
+    <h3><span style="color: blue; font-style: italic">Languages</span></h3>
     <ul>
         <li><b>Arabic</b>: Native.</li>
         <li><b>English</b>: Upper-Intermediate (B2, AMIRNET test)</li>
@@ -81,7 +74,7 @@
 
 <!-- Contact Section -->
 <div>
-    <h3><span class="section">Contact Me</span></h3>
+    <h3><span style="color: blue; font-style: italic">Contact Me</span></h3>
     <form>
         <div>
             <label for="email_input">Email: </label>
