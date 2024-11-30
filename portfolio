@@ -72,6 +72,14 @@
     <br/>
 </div>
 
+<div>
+    <h3><span class="section">Projects</span></h3>
+    <p>6 video games developed in Unity.</p>
+    <a href="https://ibrahem-abassi.itch.io/" target="_blank">Click here to visit my projects
+        page!</a>
+    <br/>
+</div>
+
 <!-- Contact Section -->
 <div>
     <h3><span class="section">Contact Me</span></h3>
@@ -93,8 +101,26 @@
                       placeholder="Enter your message here..." required></textarea>
         </div>
 
-        <div>
-            <input type="submit" value="Submit">
+         <div>
+            <label> Reason for contacting : </label><br/>
+            <label>
+                <input type="radio" name="reason" value="job offer" required> Job Offer
+            </label><br/>
+            <label>
+                <input type="radio" name="reason" value="internship"> Internship
+            </label><br/>
+            <label>
+                <input type="radio" name="reason" value="question"> Question
+            </label><br/><br/>
+
+            <label>Reason for contacting : </label>
+            <select id="reason" name="reason" required>
+                <option value="job offer"> Job Offer</option>
+                <option value="internship"> Internship</option>
+                <option value="question"> Question</option>
+            </select><br><br>
+
+            <input type="button" value="Submit">
         </div>
     </form>
     <br/><br/><br/>
