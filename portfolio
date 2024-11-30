@@ -17,11 +17,11 @@
 <body>
 
 <!-- Header -->
-<div>
+<header>
     <h1>Ibrahem Abbasi's Portfolio</h1>
     <h2>Jerusalem | 213708175</h2>
     <br/>
-</div>
+</header>
 
 <!-- Education Section -->
 <div>
@@ -61,6 +61,13 @@
     </ul>
 </div>
 
+<!-- Projects Section -->
+<div>
+    <h3><span class="section">Projects</span></h3>
+    <p>6 Video games developed in Unity.</p>
+    <a href="https://ibrahem-abassi.itch.io/" target="_blank">Visit my projects page!</a>
+</div>
+
 <!-- Languages Section -->
 <div>
     <h3><span class="section">Languages</span></h3>
@@ -72,59 +79,61 @@
     <br/>
 </div>
 
-<div>
-    <h3><span class="section">Projects</span></h3>
-    <p>6 video games developed in Unity.</p>
-    <a href="https://ibrahem-abassi.itch.io/" target="_blank">Click here to visit my projects
-        page!</a>
-    <br/>
-</div>
-
 <!-- Contact Section -->
 <div>
     <h3><span class="section">Contact Me</span></h3>
     <form>
         <div>
             <label for="email_input">Email: </label>
-            <input type="email" id="email_input" placeholder="name@example.com" required>
+            <input type="email" id="email_input" name="email_input" placeholder="name@example.com"
+                   required>
         </div>
 
         <div>
-            <label for="phone">Phone Number: </label>
-            <input type="tel" id="phone" placeholder="+972 059 1234567" required>
+            <label for="phone">Phone: </label>
+            <input type="tel" id="phone" name="phone" placeholder="+972 056 1234567" required>
         </div>
 
         <div>
-            <label for="text">Message: </label>
-            <br/>
-            <textarea id="text" rows="6" cols="40"
+            <label for="message">Message: </label><br/>
+            <textarea id="message" name="message" rows="6" cols="40"
                       placeholder="Enter your message here..." required></textarea>
         </div>
 
-         <div>
-            <label> Reason for contacting : </label><br/>
-            <label>
-                <input type="radio" name="reason" value="job offer" required> Job Offer
-            </label><br/>
-            <label>
-                <input type="radio" name="reason" value="internship"> Internship
-            </label><br/>
-            <label>
-                <input type="radio" name="reason" value="question"> Question
-            </label><br/><br/>
-
-            <label>Reason for contacting : </label>
-            <select id="reason" name="reason" required>
-                <option value="job offer"> Job Offer</option>
-                <option value="internship"> Internship</option>
-                <option value="question"> Question</option>
-            </select><br><br>
-
-            <input type="button" value="Submit">
+        <div>
+            <label for="reason_select">Reason for contacting : </label>
+            <select id="reason_select" name="reason_select" required>
+                <option value="job offer">Job Offer</option>
+                <option value="internship">Internship</option>
+                <option value="question">Question</option>
+            </select>
         </div>
+
+        <div>
+            <label>Preferred Contact Method:</label><br/>
+            <label>
+                <input type="radio" name="contact_method" value="email" required> Email
+            </label><br/>
+            <label>
+                <input type="radio" name="contact_method" value="phone"> Phone
+            </label><br/>
+            <label>
+                <input type="radio" name="contact_method" value="whatsapp"> WhatsApp
+            </label>
+            <br/><br/>
+        </div>
+
+        <div>
+            <button type="submit" value="Submit">Submit</button>
+        </div>
+
     </form>
     <br/><br/><br/>
 </div>
+
+<footer>
+    <p>&copy; 2024 Ibrahem Abbasi's Website. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
