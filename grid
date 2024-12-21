@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Grid Layout</title>
-    <style>
+    <title>Grid Exercise</title>
 
+    <style>
         body {
             display: grid;
             grid-template-areas:
@@ -25,12 +25,12 @@
 
         nav {
             grid-area: nav;
-            background-color: coral;
-            padding: 10px;
             display: grid;
             grid-gap: 10px;
             grid-template-columns: 1fr auto auto auto auto;
             grid-template-areas: "nav-title . . . .";
+            background-color: coral;
+            padding: 10px;
         }
 
         .nav-title {
@@ -39,18 +39,18 @@
 
         nav div:not(.nav-title){
             background-color: papayawhip;
-            padding: 10px 10px;
             text-align: center;
+            padding: 10px;
         }
 
         article {
             grid-area: article;
-            background-color: deepskyblue;
-            padding: 10px;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
             grid-gap: 10px;
+            background-color: deepskyblue;
+            padding: 10px;
         }
 
         article section {
@@ -60,12 +60,12 @@
 
         aside {
             grid-area: aside;
-            background-color: lightgrey;
-            padding: 10px;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
             grid-gap: 10px;
+            background-color: lightgrey;
+            padding: 10px;
         }
 
         aside div:not(.font-header) {
@@ -118,3 +118,4 @@
 
 </body>
 </html>
+
