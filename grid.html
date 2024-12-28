@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Exercise</title>
+
+    <style>
+        body {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "nav nav"
+                "article aside"
+                "footer footer";
+            grid-template-columns: 2fr 1fr;
+            grid-gap: 20px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: coral;
+            padding: 10px;
+        }
+
+        nav {
+            grid-area: nav;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: 1fr auto auto auto auto;
+            grid-template-areas: "nav-title . . . .";
+            background-color: coral;
+            padding: 10px;
+        }
+
+        .nav-title {
+            grid-area: nav-title;
+        }
+
+        nav div:not(.nav-title){
+            background-color: papayawhip;
+            text-align: center;
+            padding: 10px;
+        }
+
+        article {
+            grid-area: article;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+            background-color: deepskyblue;
+            padding: 10px;
+        }
+
+        article section {
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        aside {
+            grid-area: aside;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-gap: 10px;
+            background-color: lightgrey;
+            padding: 10px;
+        }
+
+        aside div:not(.font-header) {
+            background-color: whitesmoke;
+            padding: 10px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: coral;
+            padding: 10px;
+        }
+
+        .font-header{
+            font-size: 24px;
+        }
+
+        .font-body{
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="font-header">Header</header>
+
+    <nav>
+        <div class="nav-title font-header">Nav</div>
+        <div class="font-body">Nav Item 1</div>
+        <div class="font-body">Nav Item 2</div>
+        <div class="font-body">Nav Item 3</div>
+        <div class="font-body">Nav Item 4</div>
+    </nav>
+
+    <article>
+        <div class="font-header">Article</div>
+        <section class="font-body">Section 1</section>
+        <section class="font-body">Section 2</section>
+        <section class="font-body">Section 3</section>
+    </article>
+
+    <aside>
+        <div class="font-header">Aside</div>
+        <div class="font-body">Aside Item 1</div>
+        <div class="font-body">Aside Item 2</div>
+    </aside>
+
+    <footer class="font-header">Footer</footer>
+
+</body>
+</html>
